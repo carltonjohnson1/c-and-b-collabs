@@ -297,14 +297,14 @@ margin-top: 1.5rem;
     h1 {
       max-width: 40.60rem;
       text-align: center;
-      animation: scaleUp 0.5s linear 1s;
+      animation: slideUp 0.5s linear 1s;
 
     }
 
     p {
       text-align: center;
       max-width: 45.60rem;
-      animation: scaleUp 0.5s linear 2s;
+      animation: slideUp 0.5s linear 2s;
 
     }
   }
