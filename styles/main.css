@@ -283,7 +283,7 @@ margin-top: 1.5rem;
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-auto-rows: 180px;
     gap: 20px; 
   p {
@@ -981,7 +981,7 @@ order: 11;
 
 
 .grid-container {
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-auto-rows: 180px;
     gap: 10px; 
 
@@ -1074,7 +1074,7 @@ p {
 
 
   .grid-container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-auto-rows: 90px;
     gap: 10px; 
 
