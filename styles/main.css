@@ -83,6 +83,10 @@
     display: block;
   }
   
+  video {
+    width: 100%;
+    height: auto;
+  }
 
 
   /* Normal CSS */
@@ -279,8 +283,8 @@ margin-top: 1.5rem;
 
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: repeat(6, 1fr); 
+    grid-auto-rows: 180px;
     gap: 20px; 
   p {
     color: var(--grid-items);
@@ -294,10 +298,7 @@ margin-top: 1.5rem;
     
   }
   
-  .grid-container-height {
-    height: 360px;
-    
-  }
+ 
 
   .grid-items {
 border-radius: 8px;
@@ -666,7 +667,7 @@ padding: 0.625rem;
 .close-icon {
   position: absolute;
   top: -25px;
-  right: -20px;
+  right: 50%;
   cursor: pointer;
   img {
     width: 50px;
@@ -675,8 +676,8 @@ padding: 0.625rem;
 
 .close-video-icon {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -25px;
+  right: 50%;
   cursor: pointer;
   img {
     width: 50px;
@@ -687,7 +688,7 @@ padding: 0.625rem;
 
 .reveal-grid-container {
   display: none;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 gap: 10px;
   
 }
@@ -895,8 +896,9 @@ order: 11;
 @media (min-width: 601px) and (max-width: 1000px) {
 
 
-  .flex-container {
+.flex-container {
     flex-direction: column;
+    padding-top: 50px
   
   }
 
@@ -905,14 +907,52 @@ order: 11;
   }
 
 
-  .flex-container-fun {
+.flex-container-fun {
     flex-direction: column;
-    
-  
     
     }
  
-  .blue-background-circle {
+
+.heading-large {
+      font-size: 3.2rem;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+        }
+
+
+.heading-medium {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+  }
+
+
+.heading-small {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+
+.text-large {
+  font-size: 1.3rem;
+}
+
+
+
+.flex-item-barney-bio{
+
+  padding-left: 0px;
+ border: none;
+  
+  }
+
+
+
+
+
+
+
+.blue-background-circle {
     height: 200px;
     width: 200px;
     img {
@@ -921,52 +961,134 @@ order: 11;
     } 
   }
 
-  .orange-background-circle {
+
+.orange-background-circle {
     height: 100px;
     width: 100px;
     background-color: var(--orange-bittersweet);
     border-radius: 50%;
     overflow: hidden;
-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
       height: 75px;
       animation: scaleUp 0.5s linear 1s;
-}
+    }
     
-
    }
 
+
+
+.grid-container {
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: 180px;
+    gap: 10px; 
+
+  img {
+    max-width: 40px;
+
   }
+    
+  }
+
+
+/* last curly bracket below for this media query, don't delete or put
+anything for this media query below */
+
+}
+
+
 
 /* CSS for screens below or equal to 600px wide - mobiles in mind */
 @media (max-width: 600px) {
 
-  .flex-container {
+.flex-container {
     flex-direction: column;
+    padding-top: 40px
   
   }
 
-  .flex-container-projects-card {
+.flex-container-projects-card {
     flex-direction: column;
   }
 
-  .flex-container-fun {
+.flex-container-fun {
     flex-direction: column;
     
     }
 
-    .blue-background-circle {
-      height: 200px;
-      width: 200px;
-      img {
-        height: 175px;
+.blue-background-circle {
+    height: 200px;
+    width: 200px;
+    img {
+      height: 175px;
   
       } 
+  }
+
+.heading-large {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+      
+  }
+
+.heading-medium {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+    margin-top: 1.1rem;
+  }
+
+  
+.heading-small {
+  font-size: 1.4rem;
+  margin-bottom: 1.1rem;
+
+}
+
+
+.text-large {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--grey-text);
+  line-height: 1.5;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0.75rem 0rem;
+
+}
+
+
+.flex-item-barney-bio{
+
+  padding-left: 0px;
+ border: none;
+  
+  }
+
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 90px;
+    gap: 10px; 
+
+    p {
+      font-weight: 500;
     }
 
+  img {
+    max-width: 40px;
 
-
+  }
+    
+  }
+/* last curly bracket below for this media query, don't delete or put
+anything for this media query below */
 }
 
