@@ -92,6 +92,7 @@
   /* Normal CSS */
 
 
+
 #js-and-css-barney-video {
   position: fixed;
   top: 50%;
@@ -297,14 +298,14 @@ margin-top: 1.5rem;
     h1 {
       max-width: 40.60rem;
       text-align: center;
-      animation: slideUp 0.5s linear 1s;
+      animation: scaleUp 0.5s linear 1s forwards;
 
     }
 
     p {
       text-align: center;
       max-width: 45.60rem;
-      animation: slideUp 0.5s linear 2s;
+      animation: scaleUp 0.5s linear 1.5s forwards;
 
     }
   }
@@ -400,7 +401,7 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 1s;
+      animation: scaleUp 0.5s linear 2s forwards;
     }
     }
   
@@ -418,7 +419,7 @@ position: relative;
         position: absolute;
         top: 10px;
         right: 10px;
-        animation: scaleUp 0.5s linear 1s;
+        animation: scaleUp 0.5s linear 2s forwards;
       }
   }
   
@@ -435,7 +436,7 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 1s;
+      animation: scaleUp 0.5s linear 2s forwards;
     }
   }
   
@@ -453,7 +454,7 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 1s;
+      animation: scaleUp 0.5s linear 2s forwards;
     }
   }
   
@@ -471,7 +472,7 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 1s;
+      animation: scaleUp 0.5s linear 2s forwards;
     }
   }
   
@@ -489,7 +490,7 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 1s;
+      animation: scaleUp 0.5s linear 2s forwards;
     }
   }
   
@@ -539,27 +540,28 @@ padding-top: 5px;
     img {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
+  margin-top: 30px;
 
       height: 275px;
-      animation: scaleUp 0.5s linear 1s;
+      animation: scaleUp 0.5s linear 1s forwards;
     }
 
     
   }
   
   .orange-background-circle {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     background-color: var(--orange-bittersweet);
     border-radius: 50%;
     overflow: hidden;
+    
 img {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
-      height: 75px;
-      animation: scaleUp 0.5s linear 1s;
+
+      height: 150px;
+      animation: scaleUp 0.5s linear 1s forwards;
 }
     
   }
@@ -577,7 +579,7 @@ display: flex;
 
  img  {
   max-width: 100px;
-  animation: scaleUp 0.5s linear 0.5s;
+  animation: scaleUp 0.5s linear 0.5s forwards;
  }
 
 
@@ -607,10 +609,10 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
   img {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 12px;
     height: 90px;
       
-    animation: scaleUp 0.5s linear 1s;
+    animation: scaleUp 0.5s linear 1s forwards;
       }
 
   
@@ -626,24 +628,22 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
   img {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-    height: 75px;
+
+    height: 100px;
       
-    animation: scaleUp 0.5s linear 1s;
+    animation: scaleUp 0.5s linear 1s forwards;
       }
 
 }
 
 .reveal {
-  background-image: url(../images/updated-barney-on-bed.jpg);
+  background-image: url("../images/updated-barney-on-bed.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
   min-height: 600px;
   position: relative;
   overflow: hidden;
-
-
 
 h2 {
 
@@ -728,6 +728,11 @@ padding: 0.625rem;
     width: 50px;
   }
 }
+
+
+
+
+
 
 
 
@@ -821,7 +826,7 @@ order: 11;
   img {
     width: 44px;
     cursor: pointer;
-    animation: scaleUp 0.5s linear 1s;
+    animation: scaleUp 0.5s linear 1s forwards;
 
     
   }
@@ -844,11 +849,17 @@ order: 11;
   p {
     padding: 0rem 0rem 0.75rem 0rem;
   }
-  
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 .flex-item-projects-card-1 {
   flex: 1;
+  min-height: 500px;
   background-color: var(--project-card-one);
   border-radius: 8px;
   margin-top: 30px;
@@ -868,6 +879,7 @@ order: 11;
 
 .flex-item-projects-card-2 {
   flex: 1;
+  min-height: 500px;
   background-color: var(--project-card-two);
   border-radius: 8px;
   margin-top: 30px;
@@ -882,6 +894,7 @@ order: 11;
 
 .flex-item-projects-card-3 {
   flex: 1;
+  min-height: 500px;
   background-color: var(--project-card-three);
   border-radius: 8px;
   transition: 0.20s all ease-in-out;
@@ -895,6 +908,7 @@ order: 11;
 
 .flex-item-projects-card-4 {
   flex: 1;
+  min-height: 500px;
   background-color: var(--project-card-four);
   border-radius: 8px;
   transition: 0.20s all ease-in-out;
@@ -925,7 +939,7 @@ order: 11;
 }
 
 .projects-background {
-  background-color: var(--projects-background)
+  background-color: var(--projects-background);
 }
 
 
@@ -937,6 +951,53 @@ order: 11;
 
 /* Responsive below */
 
+/* CSS for bewtween 801px and 999px wide - just for issue with project card height*/
+@media (min-width: 801px) and (max-width: 999px) {
+
+  
+.flex-item-projects-card-1 {
+  min-height: 475px;
+ }
+ 
+ 
+ .flex-item-projects-card-2 {
+  min-height: 475px;
+ 
+ }
+ 
+ 
+ .flex-item-projects-card-3 {
+  min-height: 475px;
+ 
+ }
+ 
+ .flex-item-projects-card-4 {
+  min-height: 475px;
+  }
+ 
+
+/* last curly bracket below for this media query, don't delete or put
+anything for this media query below */
+}
+
+
+/* CSS for bewtween 601px and 800px wide - just for issue with projects imags that were to stretched.
+I could have changed the image size but wanted to test fixing the issue with a media query instead*/
+@media (min-width: 601px) and (max-width: 800px) {
+
+
+  .flex-container-projects-card {
+    flex-direction: column;
+
+  }
+
+ 
+
+/* last curly bracket below for this media query, don't delete or put
+anything for this media query below */
+}
+
+
 /* CSS for bewtween 601px and 1000px wide - tablets in mind */
 @media (min-width: 601px) and (max-width: 1000px) {
 
@@ -945,10 +1006,6 @@ order: 11;
     flex-direction: column;
     padding-top: 50px
   
-  }
-
-  .flex-container-projects-card {
-    flex-direction: column;
   }
 
 
@@ -968,8 +1025,7 @@ order: 11;
 .heading-medium {
     font-size: 2rem;
     margin-bottom: 1.3rem;
-    margin-top: 1.3rem;
-  }
+  } 
 
 
 .heading-small {
@@ -992,11 +1048,6 @@ order: 11;
   }
 
 
-
-
-
-
-
 .blue-background-circle {
     height: 200px;
     width: 200px;
@@ -1007,23 +1058,16 @@ order: 11;
   }
 
 
-.orange-background-circle {
-    height: 100px;
-    width: 100px;
-    background-color: var(--orange-bittersweet);
-    border-radius: 50%;
-    overflow: hidden;
+  .orange-background-circle {
+
+    margin-top: 20px;
     img {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 15px;
-      height: 75px;
-      animation: scaleUp 0.5s linear 1s;
+
+      height: 150px;
+      animation: scaleUp 0.5s linear 1s forwards;
     }
     
    }
-
-
 
 .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -1036,7 +1080,6 @@ order: 11;
   }
     
   }
-  
   
 
 
@@ -1107,6 +1150,20 @@ anything for this media query below */
       } 
   }
 
+  
+
+  .orange-background-circle {
+
+    margin-top: 20px;
+    img {
+
+      height: 150px;
+      animation: scaleUp 0.5s linear 1s forwards;
+    }
+    
+   }
+
+
 .heading-large {
     font-size: 2.2rem;
     margin-bottom: 1.2rem;
@@ -1117,7 +1174,7 @@ anything for this media query below */
 .heading-medium {
     font-size: 1.8rem;
     margin-bottom: 1.3rem;
-    margin-top: 1.1rem;
+
   }
 
   
@@ -1225,6 +1282,10 @@ p {
     width: 30px;
   }
 }
+
+
+
+
 
 /* last curly bracket below for this media query, don't delete or put
 anything for this media query below */
