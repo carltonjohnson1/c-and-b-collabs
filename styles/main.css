@@ -299,14 +299,17 @@ margin-top: 1.5rem;
     h1 {
       max-width: 40.60rem;
       text-align: center;
-      animation: scaleUp 0.5s linear 1s forwards;
+      animation: appear 0.5s linear forwards;
 
     }
 
     p {
       text-align: center;
       max-width: 45.60rem;
-      animation: scaleUp 0.5s linear 1.5s forwards;
+      animation: appear 0.5s linear forwards;
+  
+  
+    
 
     }
   }
@@ -411,6 +414,99 @@ position: relative;
   }
 
 
+  @keyframes appear {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  
+  @keyframes projectCardAppearLf {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    
+    }
+  }
+
+  
+  @keyframes projectCardAppearRt {
+    from {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    
+    }
+  }
+
+/* keyframes for top used for grid items */
+  
+  @keyframes usedForAppearLf {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    
+    }
+  }
+
+  
+  @keyframes usedForAppearRt {
+    from {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    
+    }
+  }
+
+  
+  @keyframes usedForAppearBm {
+    from {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    
+    }
+  }
+
+  
+
+  @keyframes usedForappear {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+
 
   /* icons in top skills grid */  
 
@@ -438,6 +534,7 @@ position: relative;
     background-color: var(--violet);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
+    animation: usedForAppearLf 0.5s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
@@ -456,7 +553,6 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 2s forwards;
     }
     }
 
@@ -467,6 +563,7 @@ position: relative;
       background-color: var(--light-red);
       cursor: pointer;
       transition: 0.20s all ease-in-out;
+      animation: usedForappear 0.75s ease forwards;
 
       &:hover {
         background-color: var(--top-grid-hover);
@@ -482,7 +579,6 @@ position: relative;
         position: absolute;
         top: 10px;
         right: 10px;
-        animation: scaleUp 0.5s linear 2s forwards;
       }
   }
   
@@ -492,10 +588,11 @@ position: relative;
     background-color: var(--torquoise);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
+    animation: usedForappear 0.5s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
-      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+      animation: hoverSizeIncrease 1s ease-in-out forwards;
     }
     p {
       position: absolute;
@@ -507,7 +604,6 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 2s forwards;
     }
   }
   
@@ -517,6 +613,7 @@ position: relative;
     background-color: var(--light-blue);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
+    animation: usedForAppearRt 0.5s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
@@ -533,7 +630,6 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 2s forwards;
     }
   }
   
@@ -543,6 +639,7 @@ position: relative;
     background-color: var(--orange-bittersweet);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
+    animation: usedForAppearBm 1s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
@@ -559,7 +656,6 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 2s forwards;
     }
   }
   
@@ -569,6 +665,7 @@ position: relative;
     background-color: var(--dark-blue);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
+    animation: usedForAppearRt 0.75s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
@@ -585,7 +682,6 @@ position: relative;
       position: absolute;
       top: 10px;
       right: 10px;
-      animation: scaleUp 0.5s linear 2s forwards;
     }
   }
 
@@ -653,6 +749,9 @@ padding-top: 5px;
     background-color: var(--light-blue);
     border-radius: 50%;
     overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 
     img {
   margin-top: 30px;
@@ -668,6 +767,9 @@ padding-top: 5px;
     background-color: var(--orange-bittersweet);
     border-radius: 50%;
     overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
     
 img {
       height: 150px;
@@ -716,6 +818,9 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
   background-color: var(--light-blue);
   border-radius: 50%;
   overflow: hidden;
+  animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 
   img {
     margin-top: 12px;
@@ -731,6 +836,9 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
   background-color: var(--orange-bittersweet);
   border-radius: 50%;
   overflow: hidden;
+  animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 
   img {
 
@@ -747,6 +855,7 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
   min-height: 600px;
   position: relative;
   overflow: hidden;
+
 
   &:hover {
     animation: hoverSizeIncrease 0.5s ease-in-out forwards;
@@ -982,6 +1091,10 @@ order: 11;
   border-radius: 8px;
   margin-top: 30px;
   transition: 0.20s all ease-in-out;
+  animation: projectCardAppearLf linear;
+animation-timeline: view();
+animation-range: entry 0 cover 40%;
+
 
   &:hover {
     background-color: var(--cream);
@@ -1003,6 +1116,9 @@ order: 11;
   border-radius: 8px;
   margin-top: 30px;
   transition: 0.20s all linear;
+  animation: projectCardAppearRt linear;
+animation-timeline: view();
+animation-range: entry 0 cover 40%;
 
   &:hover {
     background-color: var(--cream);
@@ -1018,6 +1134,9 @@ order: 11;
   background-color: var(--project-card-three);
   border-radius: 8px;
   transition: 0.20s all ease-in-out;
+  animation: projectCardAppearLf linear;
+animation-timeline: view();
+animation-range: entry 0 cover 40%;
 
   &:hover {
     background-color: var(--cream);
@@ -1033,6 +1152,9 @@ order: 11;
   background-color: var(--project-card-four);
   border-radius: 8px;
   transition: 0.20s all ease-in-out;
+  animation: projectCardAppearRt linear;
+animation-timeline: view();
+animation-range: entry 0 cover 40%;
 
   &:hover {
     background-color: var(--cream);
