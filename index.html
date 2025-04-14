@@ -26,6 +26,7 @@
     
    <header>
       <div class="main-div-wrapper">
+
         <nav>
           <input type="checkbox" id="sidebar-active">
           <label for="sidebar-active" class="open-sidebar-button">
@@ -99,22 +100,24 @@
     <main>
         <section>
           <div class="main-div-wrapper">
+            <div id="js-and-css-used-for-reveal"><p id="wordChanges"></p></div>
             <div class="grid-container">
-              <div class="grid-items item1-js"><img src="./images/JS.svg" alt="javaScript Icon"><p>JavaScript</p></div>
-              <div class="grid-items item2-ui"><img src="./images/UI.svg" alt="UI and UX Icon"><p>UI/UX</p></div>
-              <div class="grid-items item3-html"><img src="./images/html.svg" alt="HTML Icon"><p>HTML</p></div>
-              <div class="grid-items item4-css"><img src="./images/CSS.svg" alt="CSS Icon"><p>CSS</p></div>
-              <div class="grid-items item5-graphic"><img src="./images/Graphics.svg" alt="Graphic design Icon"><p>Graphic Design</p></div>
-              <div class="grid-items item6-ani"><img src="./images/Animations.svg" alt="Animation Icon"><p>Animation</p></div>
+              <div class="grid-items item1-js" id="jsWords"><img src="./images/JS.svg" alt="javaScript Icon"><p id="pjsWords" data-used="Learn More">JavaScript</p></div>
+              <div class="grid-items item2-ui"id="uiWords"><img src="./images/UI.svg" alt="UI and UX Icon"><p id="puiWords" data-used="Learn More">UI/UX</p></div>
+              <div class="grid-items item3-html" id="htmlWords"><img src="./images/html.svg" alt="HTML Icon"><p id="phtmlWords" data-used="Learn More">HTML</p></div>
+              <div class="grid-items item4-css" id="cssWords"><img src="./images/CSS.svg" alt="CSS Icon"><p id="pcssWords" data-used="Learn More">CSS</p></div>
+              <div class="grid-items item5-graphic" id="grahicWords"><img src="./images/Graphics.svg" alt="Graphic design Icon"><p id="pgrahicWords" data-used="Learn More">Graphic Design</p></div>
+              <div class="grid-items item6-ani" id="animationWords"><img src="./images/Animations.svg" alt="Animation Icon"><p id="panimationWords" data-used="Learn More">Animation</p></div>
             </div>
           </div>
+          
         </section>
         <!-- Hero bottom section with avatars -->
         <section>
           <div class="main-div-wrapper">
             <div class="flex-container">
                 <div class="flex-item-image">
-                  <div class="blue-background-circle"><img src="./images/Carlton_illustration_1.svg" alt="Carlton illustration on laptop">
+                  <div class="blue-background-circle"><img src="./images/Carlton_illustration_1.svg" class="avatar animate" alt="Carlton illustration on laptop">
                     </div>
                 </div>
                 <div class="flex-item-text">
@@ -125,7 +128,7 @@
               </p>
                   <p>He may not write JavaScript quite yet, but he’s mastered the art of guilt-tripping me away from my screen!
               </p>
-                  <div class="orange-background-circle"><img src="./images/barney_illustration_v4.svg" alt="Barney Illustration on orange background">
+                  <div class="orange-background-circle"><img src="./images/barney_illustration_v4.svg" class="avatar animate" alt="Barney Illustration on orange background">
                 
                 </div>
                 
@@ -213,7 +216,7 @@
                 <div class="flex-item-my-bio">
 <!-- <img src="./images/carlton-on-laptop.png" alt="illustration with Carlton on laptop"> -->
  <div class="my-bio-blue-background-circle">
-  <img src="./images/Carlton_illustration_1.svg" alt="Carlton illustration on laptop">
+  <img src="./images/Carlton_illustration_1.svg" class="avatar2 animate" alt="Carlton illustration on laptop">
  </div>
 <h3 class="heading-small">My Bio</h3>
 <p>Fun fact, I used to teach myself all kinds of things when I was a kid. If I saw someone on TV doing it I’d have to challenge myself to figure it out.</p>
@@ -227,7 +230,7 @@
                 <div class="flex-item-barney-bio">
                     <!-- <img src=".//images/Barney.png" alt="illustration with barney looking up, sad"> -->
                      <div class="barney-bio-blue-background-circle">
-                      <img src="./images/barney_illustration_v4.svg" alt="Barney Illustration on orange background">
+                      <img src="./images/barney_illustration_v4.svg" class="avatar2 animate" alt="Barney Illustration on orange background">
 
 
                      </div>
@@ -255,20 +258,81 @@
       
       <section>
 <!-- <div class="reveal-wrapper"> -->
+ 
 <div class="reveal-grid-container main-div-wrapper" id="js-and-css-reveal-grid-container">
   <div class="close-icon"><img src="./images/x-close-icon.svg" alt="x close icon" id="js-close-reveal-button"></div>
-  <div class="item1"><img src="./images/reveal-collage/1-Ros_barney_and_travis_by_steps.jpg" alt="Ros, Barney and Travis by steps"></div>
-  <div class="item2"><img src="./images/reveal-collage/2-barney-little.jpg" alt="Barney looking up from his bed"></div>
-  <div class="item3"><img src="./images/reveal-collage/3-cj_and_barney_walking.jpg" alt="Carlton and Barney out for a walk"></div>  
-  <div class="item4"><img src="./images/reveal-collage/4-Barney_looking_straight_at_camera.jpg" alt="Barney looking straight at the camera"></div>
-  <div class="item5"><img src="./images/reveal-collage/5-Barney_christmas_hat.jpg" alt="Barney in Christmas gear"></div>
-  <div class="item6"><img src="./images/reveal-collage/6-barney-and-travis-in-kitchen.jpg" alt="Barney and Travis in Kitchen"></div>  
-  <div class="item7"><img src="./images/reveal-collage/7-Barney_with_toy.jpg" alt="Barney with his toy looking at the camera"></div>
-  <div class="item8"><img src="./images/reveal-collage/8-Barney_in_a_carrier.jpg" alt="Barney being Carried by Carlton in a dog carrier"></div>
-  <div class="item9"><img src="./images/reveal-collage/9-carlton-with-barney-christmas.jpg" alt="Barney and Carlton sitting on chair by Christmas treet"></div>
-  <div class="item10"><img src="./images/reveal-collage/10-Barney_in_stroller.jpg" alt="Barney in his dog stroller"></div>
-  <div class="item11"><img src="./images/reveal-collage/carlton-on-boat-in-middle-of-sea.jpg" alt="Carlton on boat in the middle of the sea"></div>
-  <div class="item12"><img src="./images/reveal-collage/12-barney-looking-sad.jpg" alt="Barney looking sad after getting his bloods doen"></div>
+  <div class="item1">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/1-Ros_barney_and_travis_by_steps.jpg" />
+        <img src="./images/responsive-collage/1-Square_Ros_barney_and_travis_by_steps.jpg" alt="Ros, Barney and Travis by steps">
+    </picture>
+  </div>
+  <div class="item2">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/2-barney-little.jpg" />
+        <img src="./images/responsive-collage/2-Square_barney-little.jpg" alt="Barney looking up from his bed">
+    </picture>  
+  </div>
+  <div class="item3">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/3-cj_and_barney_walking.jpg" />
+        <img src="./images/responsive-collage/3-Square_cj_and_barney_walking.jpg" alt="Carlton and Barney out for a walk">
+    </picture>
+  </div>  
+  <div class="item4">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/4-Barney_looking_straight_at_camera.jpg" />
+        <img src="./images/responsive-collage/4-Square_Barney_looking_straight_at_camera.jpg" alt="Barney looking straight at the camera">
+    </picture>    
+  </div>
+  <div class="item5">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/5-Barney_christmas_hat.jpg" />
+        <img src="./images/responsive-collage/5-Square_Barney_christmas_hat.jpg" alt="Barney in Christmas gear">
+    </picture>
+  </div>
+  <div class="item6">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/6-barney-and-travis-in-kitchen.jpg" />
+        <img src="./images/responsive-collage/6-Square_barney-and-travis-in-kitchen.jpg" alt="Barney and Travis in Kitchen">
+    </picture>
+  </div>  
+  <div class="item7">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/7-Barney_with_toy.jpg" />
+        <img src="./images/responsive-collage/7-Square_Barney_with_toy.jpg" alt="Barney with his toy looking at the camera">
+    </picture>
+  </div>
+  <div class="item8">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/8-Barney_in_a_carrier.jpg" />
+        <img src="./images/responsive-collage/8-Square_Barney_in_a_carrier.jpg" alt="Barney being Carried by Carlton in a dog carrier">
+    </picture>    
+  </div>
+  <div class="item9">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/9-carlton-with-barney-christmas.jpg" />
+        <img src="./images/responsive-collage/9-Square_carlton-with-barney-christmas.jpg" alt="Barney and Carlton sitting on chair by Christmas treet">
+    </picture>
+  </div>
+  <div class="item10">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/10-Barney_in_stroller.jpg" />
+        <img src="./images/responsive-collage/10-Square_Barney_in_stroller.jpg" alt="Barney in his dog stroller">
+    </picture>
+  </div>
+  <div class="item11">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/11.carlton-on-boat-in-middle-of-sea.jpg" />
+        <img src="./images/responsive-collage/11.Square_carlton-on-boat-in-middle-of-sea.jpg" alt="Carlton on boat in the middle of the sea">
+    </picture>
+  </div>
+  <div class="item12">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="./images/reveal-collage/12-barney-looking-sad.jpg" />
+        <img src="./images/responsive-collage/12-Square_barney-looking-sad.jpg" alt="Barney looking sad after getting his bloods doen">
+    </picture>
+  </div>
 </div>
 
 <div id="popup-reveal-overlay"></div>
