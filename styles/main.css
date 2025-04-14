@@ -26,6 +26,7 @@
     --project-card-two: #EB7565;
     --project-card-three:#EB7565;
     --project-card-four:#42DBC6;
+    --top-grid-hover: #4e4a59;
 
   }
 
@@ -51,6 +52,7 @@
     --project-card-two: #3D3D3D;
     --project-card-three:#3D3D3D;
     --project-card-four: #3D3D3D;
+    --top-grid-hover: #4e4a59;
     --grid-items: #fff;
     --footer-text-and-tap-to-reveal: #fff;
   }
@@ -133,7 +135,6 @@
 }
 
 
-
   .flex-nav {
     margin-top: 1.25rem;
     margin-bottom: 2rem;
@@ -160,14 +161,6 @@ width: 100%;
 
 }
 
-.sun {
-  width: 3.125rem;
-}
-
-.dark-moon {
-  width: 2.187rem;
-}
-
   
 .black-btn {
   background-color: var(--night-black);
@@ -178,10 +171,12 @@ width: 100%;
   font-size: 1rem;
   font-family: poppins;
   transition: 0.20s all ease-in-out;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--orange-bittersweet-button-hovers);
-    cursor: pointer;
+    animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+   
   }
 
 }
@@ -199,7 +194,7 @@ width: 100%;
 
   &:hover {
     background-color: var(--orange-bittersweet-button-hovers);
-    cursor: pointer;
+    animation: hoverSizeIncrease 0.5s ease-in-out forwards;
   }
 
   svg {
@@ -222,8 +217,11 @@ width: 100%;
 
 #js-and-css-logo {
 max-width: 150px;
-
 }
+
+
+
+
  
 #js-and-css-logo svg {
 fill: var(--night-black);
@@ -383,18 +381,72 @@ position: relative;
     }
   }
 
+  @keyframes hoverSizeIncrease {
+    from {
+      transform: scale(1);
 
-  /* icons in top skills grid */
+    }
+
+    to {
+      transform: scale(1.05);
+
+    }
+
+  }
+
+  @keyframes hoverSizeIncreaseTab {
+    from {
+      transform: scale(1);
+
+    }
+
+    to {
+      transform: scale(1.03);
+
+    }
+
+  }
+
+
+
+  /* icons in top skills grid */  
+
+    .grid-items p::before {
+      content: attr(data-used);
+      position: absolute;
+      bottom: 1px;
+      margin-bottom: -20px;
+      transform: translateY(-30px) rotate(25deg);
+      opacity: 0;
+      transition: 200ms cubic-bezier(.42, 0, .44, 1.68);   
+  
+    }
+
+
+  .grid-items p:hover::before {
+    transform: translateY(-65px) rotate(0);
+    opacity: 1;
+  }
+
   
   .item1-js {
     grid-column: span 2; 
     grid-row: span 2; 
     background-color: var(--violet);
+    cursor: pointer;
+    transition: 0.20s all ease-in-out;
+
+    &:hover {
+      background-color: var(--top-grid-hover);
+      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+    }
   
     p {
       position: absolute;
-      bottom: 10px;
+      bottom: 0px;
       left: 10px;
+      width: 100%;
+   
     }
 
     img {
@@ -404,16 +456,24 @@ position: relative;
       animation: scaleUp 0.5s linear 2s forwards;
     }
     }
-  
-  
+
+
   .item2-ui {
     grid-column: span 1; 
       grid-row: span 1;
       background-color: var(--light-red);
+      cursor: pointer;
+      transition: 0.20s all ease-in-out;
+
+      &:hover {
+        background-color: var(--top-grid-hover);
+        animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+      }
       p {
         position: absolute;
-        bottom: 10px;
+        bottom: 0px;
         left: 10px;
+        width: 100%;
       }
       img {
         position: absolute;
@@ -427,10 +487,18 @@ position: relative;
     grid-column: span 1; 
     grid-row: span 1;
     background-color: var(--torquoise);
+    cursor: pointer;
+    transition: 0.20s all ease-in-out;
+
+    &:hover {
+      background-color: var(--top-grid-hover);
+      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+    }
     p {
       position: absolute;
-      bottom: 10px;
+      bottom: 0px;
       left: 10px;
+      width: 100%;
     }
     img {
       position: absolute;
@@ -444,10 +512,18 @@ position: relative;
     grid-column: span 2; 
     grid-row: span 1;
     background-color: var(--light-blue);
+    cursor: pointer;
+    transition: 0.20s all ease-in-out;
+
+    &:hover {
+      background-color: var(--top-grid-hover);
+      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+    }
     p {
       position: absolute;
-      bottom: 10px;
+      bottom: 0px;
       left: 10px;
+      width: 100%;
     }
 
     img {
@@ -462,10 +538,18 @@ position: relative;
     grid-column: span 2; 
     grid-row: span 1; 
     background-color: var(--orange-bittersweet);
+    cursor: pointer;
+    transition: 0.20s all ease-in-out;
+
+    &:hover {
+      background-color: var(--top-grid-hover);
+      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+    }
     p {
       position: absolute;
-      bottom: 10px;
+      bottom: 0px;
       left: 10px;
+      width: 100%;
     }
 
     img {
@@ -480,10 +564,18 @@ position: relative;
     grid-column: span 2;
     grid-row: span 1; 
     background-color: var(--dark-blue);
+    cursor: pointer;
+    transition: 0.20s all ease-in-out;
+
+    &:hover {
+      background-color: var(--top-grid-hover);
+      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+    }
     p {
       position: absolute;
-      bottom: 10px;
+      bottom: 0px;
       left: 10px;
+      width: 100%;
     }
 
     img {
@@ -493,6 +585,29 @@ position: relative;
       animation: scaleUp 0.5s linear 2s forwards;
     }
   }
+
+
+#js-and-css-used-for-reveal {
+display: none;
+justify-content: center;
+align-items: center;
+margin-bottom: 32px;
+margin-top: -30px;
+cursor: pointer;
+
+p {
+  color: var(--white);
+  background-color: var(--dark-text);
+  padding: 8px 20px;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+ 
+}
+
+}
+
+
   
 
   .flex-container {
@@ -536,14 +651,9 @@ padding-top: 5px;
     border-radius: 50%;
     overflow: hidden;
 
-  
     img {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 30px;
-
       height: 275px;
-      animation: scaleUp 0.5s linear 1s forwards;
     }
 
     
@@ -557,14 +667,31 @@ padding-top: 5px;
     overflow: hidden;
     
 img {
-  margin-left: auto;
-  margin-right: auto;
-
       height: 150px;
-      animation: scaleUp 0.5s linear 1s forwards;
 }
     
   }
+
+
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar.in-view {
+  animation: scaleUp ease-in 1s forwards;
+}
+
+
+.avatar2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar2.in-view {
+  animation: scaleUp ease-in 1s forwards;
+}
+
 
   .center {
     text-align: center;
@@ -607,12 +734,8 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
   overflow: hidden;
 
   img {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 12px;
     height: 90px;
-      
-    animation: scaleUp 0.5s linear 1s forwards;
       }
 
   
@@ -626,12 +749,8 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
   overflow: hidden;
 
   img {
-    margin-left: auto;
-    margin-right: auto;
 
     height: 100px;
-      
-    animation: scaleUp 0.5s linear 1s forwards;
       }
 
 }
@@ -644,6 +763,10 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
   min-height: 600px;
   position: relative;
   overflow: hidden;
+
+  &:hover {
+    animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+  }
 
 h2 {
 
@@ -665,22 +788,11 @@ height: 100%;
   &:hover {
     cursor: pointer;
     background-color: rgba(235, 117, 101, 0.8);
+   
   }
 
 }
 
-#js-and-css-reveal-grid-container {
-  background: white;
-  border-radius: 0.5rem;
-  width: 100%;
-padding: 0.625rem;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: 10;
-
-}
 
 #popup-reveal-overlay {
   display: none;
@@ -705,6 +817,8 @@ padding: 0.625rem;
   z-index: 5;
 
 }
+
+
 
 
 .close-icon {
@@ -733,13 +847,30 @@ padding: 0.625rem;
 
 
 
+/* Start grid photo container and options */
 
+
+
+
+#js-and-css-reveal-grid-container {
+  position: relative;
+
+
+}
 
 
 .reveal-grid-container {
   display: none;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 gap: 10px;
+background: white;
+border-radius: 0.5rem;
+width: 98%;
+padding: 0.625rem;
+position: absolute;
+width: 90%;
+top: -500px;
+z-index: 10;
   
 }
 
@@ -806,6 +937,9 @@ order: 11;
 
 
 
+/* End grid photo container and options */
+
+
 .footer {
   background-color: var(--footer-background);
   padding: 20px 30px;
@@ -868,6 +1002,7 @@ order: 11;
   &:hover {
     background-color: var(--cream);
     cursor: pointer;
+    animation: hoverSizeIncrease 0.5s ease-in-out forwards;
   }
 
 
@@ -888,6 +1023,7 @@ order: 11;
   &:hover {
     background-color: var(--cream);
     cursor: pointer;
+    animation: hoverSizeIncrease 0.5s ease-in-out forwards;
   }
 }
 
@@ -902,6 +1038,7 @@ order: 11;
   &:hover {
     background-color: var(--cream);
     cursor: pointer;
+    animation: hoverSizeIncrease 0.5s ease-in-out forwards;
   }
   
 }
@@ -916,6 +1053,7 @@ order: 11;
   &:hover {
     background-color: var(--cream);
     cursor: pointer;
+    animation: hoverSizeIncrease 0.5s ease-in-out forwards;
   }
 }
 
@@ -1002,6 +1140,84 @@ anything for this media query below */
 @media (min-width: 601px) and (max-width: 1000px) {
 
 
+
+  .reveal-grid-container {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    padding: 0.625rem; 
+    background: white; 
+    border-radius: 0.5rem;
+    position: absolute;
+    width: 90%;
+    top: -500px;
+    z-index: 10;
+  }
+  
+
+  .item1 {
+    grid-row: 1 / span 1;
+      order: 1;
+    }
+    
+    .item2 {
+     grid-row: 1 / span 1;
+     order: 2;
+    }
+    
+    .item3 {
+    grid-row: 1 / span 1;
+      order: 3;
+    }
+    
+    .item4 {
+    grid-row: 2 / span 1;
+      order: 4;
+    } 
+    
+    
+    .item5 {
+     grid-row: 2 / span 1; 
+      order: 5;
+    }
+    
+    .item6 {
+     grid-row: 2 / span 1;
+      order: 6;
+    }
+    
+    .item7 {
+      grid-row: 3 / span 1;   
+      order: 3;
+    }
+    
+    .item8 {
+     grid-row: 3 / span 1;   
+      order: 8;
+    }
+    
+    .item9 {
+      grid-row: 3 / span 1;   
+    order: 9;
+    }
+    
+    .item10 {
+       grid-row: 4 / span 1;   
+      order: 10;
+    }
+    
+    .item11 {
+      grid-row: 4 / span 1;   
+    order: 11;
+    }
+    
+    .item12 {
+      grid-row: 4 / span 1;  
+      order: 12;
+    }
+    
+    
+
 .flex-container {
     flex-direction: column;
     padding-top: 50px
@@ -1064,7 +1280,6 @@ anything for this media query below */
     img {
 
       height: 150px;
-      animation: scaleUp 0.5s linear 1s forwards;
     }
     
    }
@@ -1115,6 +1330,109 @@ gap: 10px;
   }
 }
 
+/* icons in top skills grid */
+  
+.item1-js {
+  cursor: pointer;
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+
+  }
+
+
+.item2-ui {
+ 
+    cursor: pointer;
+
+    &:hover {
+      animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+    }
+
+}
+
+.item3-html {
+
+  cursor: pointer;
+
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+ 
+}
+
+.item4-css {
+
+  cursor: pointer;
+
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+ 
+}
+
+.item5-graphic {
+
+  cursor: pointer;
+
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+ 
+}
+
+.item6-ani {
+ 
+  cursor: pointer;
+
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+
+}
+
+ 
+.flex-item-projects-card-1 {
+
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+  
+ }
+ 
+ 
+ .flex-item-projects-card-2 {
+ 
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+ 
+ }
+ 
+ 
+ .flex-item-projects-card-3 {
+ 
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+ }
+ 
+ .flex-item-projects-card-4 {
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+ 
+  }
+
+  
+.reveal {
+
+  &:hover {
+    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
+  }
+
+
+}
 
 /* last curly bracket below for this media query, don't delete or put
 anything for this media query below */
@@ -1158,7 +1476,6 @@ anything for this media query below */
     img {
 
       height: 150px;
-      animation: scaleUp 0.5s linear 1s forwards;
     }
     
    }
@@ -1286,23 +1603,218 @@ p {
 
 .flex-item-projects-card-1 {
   min-height: 0px;
+
+  &:hover {
+    animation: none;
+  }
  }
  
  
  .flex-item-projects-card-2 {
   min-height: 0px;
+
+  &:hover {
+    animation: none;
+  }
  
  }
  
  
  .flex-item-projects-card-3 {
   min-height: 0px;
+
+  &:hover {
+    animation: none;
+  }
  
  }
  
  .flex-item-projects-card-4 {
   min-height: 0px;
+
+  &:hover {
+    animation: none;
   }
+  }
+
+
+  
+.reveal {
+
+  &:hover {
+    animation: none;
+  }
+
+
+}
+
+/* icons in top skills grid */
+  
+.item1-js {
+  cursor: pointer;
+
+  &:hover {
+    animation: none;
+  }
+
+  }
+
+
+.item2-ui {
+ 
+    cursor: pointer;
+
+    &:hover {
+      animation: none;
+    }
+
+}
+
+.item3-html {
+
+  cursor: pointer;
+
+  &:hover {
+    animation: none;
+  }
+ 
+}
+
+.item4-css {
+
+  cursor: pointer;
+
+  &:hover {
+    animation: none;
+  }
+ 
+}
+
+.item5-graphic {
+
+  cursor: pointer;
+
+  &:hover {
+    animation: none;
+  }
+ 
+}
+
+.item6-ani {
+ 
+  cursor: pointer;
+
+  &:hover {
+    animation: none;
+  }
+
+}
+
+
+.black-btn {
+
+  cursor: pointer;
+  &:hover {
+  animation: none;
+ 
+}
+
+}
+
+#js-and-css-theme-switch  {
+
+cursor: pointer;
+
+  &:hover {
+
+  animation: none;
+ 
+}
+}
+
+.grid-items p::before {
+  content: "";
+
+}
+
+
+.reveal-grid-container {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 0.625rem; 
+  background: white; 
+  border-radius: 0.5rem;
+  position: absolute;
+  width: 90%;
+  top: -550px;
+  z-index: 10;
+}
+
+
+.item1 {
+  grid-row: 1 / span 1;
+    order: 1;
+  }
+  
+  .item2 {
+   grid-row: 1 / span 1;
+   order: 2;
+  }
+  
+  .item3 {
+  grid-row: 2 / span 1;
+    order: 3;
+  }
+  
+  .item4 {
+  grid-row: 2 / span 1;
+    order: 4;
+  } 
+  
+  
+  .item5 {
+   grid-row: 3 / span 1; 
+    order: 5;
+  }
+  
+  .item6 {
+   grid-row: 3 / span 1;
+    order: 6;
+  }
+  
+  .item7 {
+    grid-row: 4 / span 1;   
+    order: 3;
+  }
+  
+  .item8 {
+   grid-row: 4 / span 1;   
+    order: 8;
+  }
+  
+  .item9 {
+    grid-row: 5 / span 1;   
+  order: 9;
+  }
+  
+  .item10 {
+     grid-row: 5 / span 1;   
+    order: 10;
+  }
+  
+  .item11 {
+    grid-row: 6 / span 1;   
+  order: 11;
+  }
+  
+  .item12 {
+    grid-row: 6 / span 1;  
+    order: 12;
+  }
+  
+  
+
 
 
 
