@@ -123,3 +123,122 @@ function closeOverlay() {
     document.getElementById("js-and-css-reveal-grid-container").style.display = "none";
 }
 
+/*
+INTERACTIVE 4: 
+a) Change words in grid items on hover to learn more
+b) on click change words on Card to read how that element was used. 
+The three E's
+1. The Element(s) we want to interact with
+2. The Event we want to kick off the interaction
+3. The Execution: what happens next and what elements are involved
+*/ 
+
+// Element
+
+const jsWords = document.getElementById("jsWords");
+const uiWords = document.getElementById("uiWords");
+const htmlWords = document.getElementById("htmlWords");
+const cssWords = document.getElementById("cssWords");
+const grahicWords = document.getElementById("grahicWords");
+const animationWords = document.getElementById("animationWords");
+
+
+// Event
+
+jsWords.addEventListener("click", revealJsWords);
+uiWords.addEventListener("click", revealUiWords);
+htmlWords.addEventListener("click", revealHtmlWords);
+cssWords.addEventListener("click", revealCssWords);
+grahicWords.addEventListener("click", revealGrahicWords);
+animationWords.addEventListener("click", revealAnimationWords);
+
+// Execution
+
+
+function revealJsWords (){
+ 
+    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "used for creating interactivity";
+    
+    }
+
+function revealUiWords (){
+    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "used for creating a great user experience";
+           
+    }
+function revealHtmlWords (){
+    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "used for page structure";
+       
+    }
+
+function revealCssWords (){
+    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "used for design, layout and style";
+           
+    }
+function revealGrahicWords (){
+    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "used for images and design";
+       
+    }
+
+function revealAnimationWords (){
+    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "used for creating moving items";
+           
+    }
+
+
+// closing revealed text when the text is clicked. 
+
+// Element
+const closeWordsChange = document.getElementById("js-and-css-used-for-reveal");
+
+// Event
+
+closeWordsChange.addEventListener("click", closeWords);
+
+// Execution
+
+function closeWords () {
+    document.getElementById("js-and-css-used-for-reveal").style.display = "none"
+}
+
+
+// INTERACTIVE 5
+// Trigger CSS Animations when elements are scrolled into view
+// Got code  and how to implement from from watching the following Youtube Video: https://youtu.be/iXlkRhjnnpk?si=QPu82LJEzD2Pwklg
+
+// This JS uses the Intersection Observer API to determine if objects are within the viewport
+// It addes an 'in-view' class to elements when they come into view (and removes the class when not on screen)
+// Use to add @keyframe or transition animations to elements so they animate once they are on screen
+
+//TO USE
+// Simply add the .animate class to those HTML elements that you wish to animate. For example, <h1 class="animate">
+// Once in the viewport, the JS will add the 'in-view' class to those elements. For example, <h1 class="animate in-view">
+// Define your CSS to enable animations once that element is in view. For example, h1.in-view { }
+
+//Check if the document is loaded (so that this script can be placed in the <head>)
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Use Intersection Observer to determine if objects are within the viewport
+	const observer = new IntersectionObserver(entries => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('in-view');
+		  return;
+		}
+		entry.target.classList.remove('in-view');
+	  });
+	});
+
+	// Get all the elements with the .animate class applied
+	const allAnimatedElements = document.querySelectorAll('.animate');
+
+	// Add the observer to each of those elements
+	allAnimatedElements.forEach((element) => observer.observe(element));
+
+}); 
+
