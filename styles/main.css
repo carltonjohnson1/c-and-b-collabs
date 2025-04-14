@@ -86,7 +86,7 @@
   }
   
   video {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -97,13 +97,16 @@
 
 #js-and-css-barney-video {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
+  top: 75px;
   z-index: 10;
  display: none;
+ max-width: 95%;
 }
 
+.video-flex {
+  display: flex;
+  justify-content: center;
+}
 
 
   .main-div-wrapper {
@@ -672,25 +675,6 @@ img {
     
   }
 
-
-.avatar {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.avatar.in-view {
-  animation: scaleUp ease-in 1s forwards;
-}
-
-
-.avatar2 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.avatar2.in-view {
-  animation: scaleUp ease-in 1s forwards;
-}
 
 
   .center {
