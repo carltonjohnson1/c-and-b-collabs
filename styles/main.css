@@ -93,7 +93,89 @@
 
   /* Normal CSS */
 
+  
 
+
+
+
+.paws-svg-1st-left {
+  width: 40px;
+  position: fixed;
+  top: 5%;
+  left: 40%;
+  translate: -50% -50%;
+
+}
+
+.paws-svg-1st-right {
+  width: 40px;
+  position: fixed;
+  top: 15%;
+  left: 60%;
+  translate: -50% -50%;
+
+}
+
+
+.paws-svg-2nd-left {
+  width: 40px;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  translate: -50% -50%;
+
+}
+
+.paws-svg-2nd-right {
+  width: 40px;
+  position: fixed;
+  top: 40%;
+  left: 60%;
+  translate: -50% -50%;
+
+}
+
+
+.paws-svg-3rd-left {
+  width: 40px;
+  position: fixed;
+  top: 55%;
+  left: 40%;
+  translate: -50% -50%;
+
+}
+
+.paws-svg-3rd-right {
+  width: 40px;
+  position: fixed;
+  top: 65%;
+  left: 60%;
+  translate: -50% -50%;
+}
+
+
+.paws-svg-4th-left {
+  width: 40px;
+  position: fixed;
+  top: 80%;
+  left: 40%;
+  translate: -50% -50%;
+}
+
+.paws-svg-4th-right {
+  width: 40px;
+  position: fixed;
+  top: 90%;
+  left: 60%;
+  translate: -50% -50%;
+
+}
+
+
+.paws-span {
+display: none;
+
+}
 
 #js-and-css-barney-video {
   position: fixed;
