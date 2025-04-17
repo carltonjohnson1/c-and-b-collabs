@@ -120,9 +120,8 @@
   top: 5%;
   left: 40%;
   translate: -50% -50%;
-  animation: pawsAppear 1s linear forwards;
+  animation: pawsAppear 8s linear forwards;
  
-
 }
 
 .paws-svg-1st-right {
@@ -131,7 +130,8 @@
   top: 15%;
   left: 60%;
   translate: -50% -50%;
-  animation: pawsAppear 1.25s linear forwards;
+  animation: pawsAppear 8.5s linear forwards;
+  
 
 }
 
@@ -142,7 +142,7 @@
   top: 30%;
   left: 40%;
   translate: -50% -50%;
-  animation: pawsAppear 1.5s linear forwards;
+  animation: pawsAppear 9s linear forwards;
 
 }
 
@@ -152,7 +152,7 @@
   top: 40%;
   left: 60%;
   translate: -50% -50%;
-  animation: pawsAppear 1.75s linear forwards;
+  animation: pawsAppear 9.5s linear forwards;
 
 }
 
@@ -163,7 +163,7 @@
   top: 55%;
   left: 40%;
   translate: -50% -50%;
-  animation: pawsAppear 2s linear forwards;
+  animation: pawsAppear 10s linear forwards;
 
 }
 
@@ -173,7 +173,7 @@
   top: 65%;
   left: 60%;
   translate: -50% -50%;
-  animation: pawsAppear 2.25s linear forwards;
+  animation: pawsAppear 10.5s linear forwards;
 }
 
 
@@ -183,7 +183,7 @@
   top: 80%;
   left: 40%;
   translate: -50% -50%;
-  animation: pawsAppear 2.5s linear forwards;
+  animation: pawsAppear 11s linear forwards;
 }
 
 .paws-svg-4th-right {
@@ -192,7 +192,7 @@
   top: 90%;
   left: 60%;
   translate: -50% -50%;
-  animation: pawsAppear 2.75s linear forwards;
+  animation: pawsAppear 11.5s linear forwards;
 
 }
 
@@ -638,12 +638,14 @@ position: relative;
     background-color: var(--violet);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
-    animation: usedForAppearLf 0.5s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
       animation: hoverSizeIncrease 0.5s ease-in-out forwards;
+   
     }
+
+    
   
     p {
       position: absolute;
@@ -667,7 +669,6 @@ position: relative;
       background-color: var(--light-red);
       cursor: pointer;
       transition: 0.20s all ease-in-out;
-      animation: usedForappear 0.75s ease forwards;
 
       &:hover {
         background-color: var(--top-grid-hover);
@@ -692,7 +693,6 @@ position: relative;
     background-color: var(--torquoise);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
-    animation: usedForappear 0.5s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
@@ -717,7 +717,6 @@ position: relative;
     background-color: var(--light-blue);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
-    animation: usedForAppearRt 0.5s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
@@ -743,7 +742,6 @@ position: relative;
     background-color: var(--orange-bittersweet);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
-    animation: usedForAppearBm 1s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
@@ -769,7 +767,6 @@ position: relative;
     background-color: var(--dark-blue);
     cursor: pointer;
     transition: 0.20s all ease-in-out;
-    animation: usedForAppearRt 0.75s ease forwards;
 
     &:hover {
       background-color: var(--top-grid-hover);
