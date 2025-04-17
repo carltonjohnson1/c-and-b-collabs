@@ -158,35 +158,35 @@ animationWords.addEventListener("click", revealAnimationWords);
 function revealJsWords (){
  
     document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "used for creating interactivity";
+    document.getElementById("wordChanges").innerText = "JavaScript: used for creating interactivity";
     
     }
 
 function revealUiWords (){
     document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "used for creating a great user experience";
+    document.getElementById("wordChanges").innerText = "UI/UX: used for creating a great user experience";
            
     }
 function revealHtmlWords (){
     document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "used for page structure";
+    document.getElementById("wordChanges").innerText = "HTML: used for page structure";
        
     }
 
 function revealCssWords (){
     document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "used for design, layout and style";
+    document.getElementById("wordChanges").innerText = "CSS: used for design, layout and style";
            
     }
 function revealGrahicWords (){
     document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "used for images and design";
+    document.getElementById("wordChanges").innerText = "Graphic Design: used for images and design";
        
     }
 
 function revealAnimationWords (){
     document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "used for creating moving items";
+    document.getElementById("wordChanges").innerText = "Animation: used for creating moving items";
            
     }
 
@@ -206,3 +206,13 @@ function closeWords () {
     document.getElementById("js-and-css-used-for-reveal").style.display = "none"
 }
 
+
+/* not sure I'm going to use the option below*/
+// // INTERACTIVE  4
+// // set paws to only show up when part way down the page
+// // set paws to show up and hide as needed to make it look like paws walking down the page on scroll
+
+window.addEventListener('scroll', function() {
+    let scrollPosition = this.window.scrollY;
+    
+  });
