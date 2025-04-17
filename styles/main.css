@@ -637,11 +637,11 @@ position: relative;
     grid-row: span 2; 
     background-color: var(--violet);
     cursor: pointer;
-    transition: 0.20s all ease-in-out;
+    transition: 0.20s all ease;
+    animation: usedForAppearLf 0.50s;
 
     &:hover {
       background-color: var(--top-grid-hover);
-      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
    
     }
 
@@ -668,11 +668,11 @@ position: relative;
       grid-row: span 1;
       background-color: var(--light-red);
       cursor: pointer;
-      transition: 0.20s all ease-in-out;
+      transition: 0.20s all ease;
+      animation: usedForappear 1.5s;
 
       &:hover {
         background-color: var(--top-grid-hover);
-        animation: hoverSizeIncrease 0.5s ease-in-out forwards;
       }
       p {
         position: absolute;
@@ -692,11 +692,11 @@ position: relative;
     grid-row: span 1;
     background-color: var(--torquoise);
     cursor: pointer;
-    transition: 0.20s all ease-in-out;
+    transition: 0.20s all ease;
+    animation: usedForappear 1.25s;
 
     &:hover {
       background-color: var(--top-grid-hover);
-      animation: hoverSizeIncrease 1s ease-in-out forwards;
     }
     p {
       position: absolute;
@@ -716,11 +716,11 @@ position: relative;
     grid-row: span 1;
     background-color: var(--light-blue);
     cursor: pointer;
-    transition: 0.20s all ease-in-out;
+    transition: 0.20s all ease;
+    animation: usedForAppearRt 0.50s;
 
     &:hover {
       background-color: var(--top-grid-hover);
-      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
     }
     p {
       position: absolute;
@@ -741,11 +741,11 @@ position: relative;
     grid-row: span 1; 
     background-color: var(--orange-bittersweet);
     cursor: pointer;
-    transition: 0.20s all ease-in-out;
+    transition: 0.20s all ease;
+    animation: usedForAppearBm 1s;
 
     &:hover {
       background-color: var(--top-grid-hover);
-      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
     }
     p {
       position: absolute;
@@ -766,11 +766,11 @@ position: relative;
     grid-row: span 1; 
     background-color: var(--dark-blue);
     cursor: pointer;
-    transition: 0.20s all ease-in-out;
+    transition: 0.20s all ease;
+    animation: usedForAppearRt 1.5s;
 
     &:hover {
       background-color: var(--top-grid-hover);
-      animation: hoverSizeIncrease 0.5s ease-in-out forwards;
     }
     p {
       position: absolute;
@@ -1537,68 +1537,7 @@ gap: 10px;
   }
 }
 
-/* icons in top skills grid */
   
-.item1-js {
-  cursor: pointer;
-  &:hover {
-    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
-  }
-
-  }
-
-
-.item2-ui {
- 
-    cursor: pointer;
-
-    &:hover {
-      animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
-    }
-
-}
-
-.item3-html {
-
-  cursor: pointer;
-
-  &:hover {
-    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
-  }
- 
-}
-
-.item4-css {
-
-  cursor: pointer;
-
-  &:hover {
-    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
-  }
- 
-}
-
-.item5-graphic {
-
-  cursor: pointer;
-
-  &:hover {
-    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
-  }
- 
-}
-
-.item6-ani {
- 
-  cursor: pointer;
-
-  &:hover {
-    animation: hoverSizeIncreaseTab 0.5s ease-in-out forwards;
-  }
-
-}
-
- 
 .flex-item-projects-card-1 {
 
   &:hover {
