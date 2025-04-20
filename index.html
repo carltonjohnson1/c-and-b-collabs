@@ -54,7 +54,7 @@
   <label for="sidebar-active" class="close-sidebar-button">
     <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
 </label>
-<span id="js-and-css-logo">
+<span id="jslogo">
   <svg width="238" height="48" viewBox="0 0 238 48" xmlns="http://www.w3.org/2000/svg" fill="#1f1f1f">
 
     <path d="M26.4487 39.958C26.644 38.9961 27.1127 38.1118 27.7984 37.4125C28.4839 36.7129 29.3568 36.2283 30.3112 36.0173V33.662C29.7156 33.5708 29.1505 33.3371 28.6637 32.9803C28.177 32.6234 27.783 32.1542 27.515 31.6121C27.5039 31.5881 27.4859 31.568 27.4634 31.5542C27.4408 31.5405 27.4146 31.5338 27.3883 31.5349C26.4415 31.5332 25.5338 31.1546 24.8642 30.482C24.1947 29.8093 23.8176 28.8977 23.8159 27.9464C23.8159 27.8378 23.83 27.7213 23.8409 27.6082C21.9749 28.5446 20.3395 29.8858 19.0528 31.5349C17.2327 33.8945 16.2428 36.7937 16.2382 39.7786C16.2403 41.3137 16.6781 42.8164 17.5002 44.1105C18.3224 45.4046 19.4949 46.4365 20.8801 47.0848L24.6918 43.2562C25.5895 42.3557 26.2011 41.2078 26.4487 39.958ZM20.5684 36.9719H18.4033V34.7972H20.5684V36.9719ZM22.7334 32.6223H24.8985V34.7972H22.7334V32.6223ZM23.8159 40.2342H21.651V38.0593H23.8159V40.2342Z"/>
@@ -73,13 +73,13 @@
   </span>
      <!-- <img src="./images/C_and_B_Collabs_Logo.svg"  alt="C and B Collabs Logo"> -->
   <div class="toggle-with-icons">
-    <button type="button" id="js-and-css-theme-switch" title="Switch between light or dark mode">
+    <button type="button" id="jsThemeSwitchBtn" title="Switch between light or dark mode">
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
 
     </button>
   </div>
-    <button type="button" class="black-btn" id="js-black-btn">Meet Barney</button>
+    <button type="button" class="black-btn" id="jsBlackBtn">Meet Barney</button>
 
 </div>
         
@@ -87,12 +87,12 @@
         
 <!-- Video reveal for Barney Start -->
  <div class="main-div-wrapper video-flex" >
- <div id="js-and-css-barney-video">
-  <div class="close-video-icon"><img src="./images/x-close-icon.svg" alt="x close icon" id="js-close-video-button"></div>
+ <div id="jsBarneyVideo">
+  <div class="close-video-icon"><img src="./images/x-close-icon.svg" alt="x close icon" id="jsCloseVideoBtn"></div>
   <video controls autoplay muted loop src="./Video/barney-typing.mp4"></video>
 </div>
 </div>
-<div id="popup-video-overlay"></div>
+<div id="popupVideoOverlay"></div>
 <!-- Video reveal for Barney end -->
 
             <!-- hero top section with grid -->
@@ -115,7 +115,7 @@
     <main>
         <section>
           <div class="main-div-wrapper">
-            <div id="js-and-css-used-for-reveal"><p id="wordChanges"></p></div>
+            <div id="jsUsedForReveal"><p id="wordChanges"></p></div>
             <div class="grid-container">
               <div class="grid-items item1-js" id="jsWords"><img src="./images/JS.svg" alt="javaScript Icon"><p id="pjsWords" data-used="Learn More">JavaScript</p></div>
               <div class="grid-items item2-ui"id="uiWords"><img src="./images/UI.svg" alt="UI and UX Icon"><p id="puiWords" data-used="Learn More">UI/UX</p></div>
@@ -262,7 +262,7 @@
 
             </div>
         
-           <div class="reveal top" id="js-reveal">
+           <div class="reveal top" id="jsReveal">
             <div class="reveal-overlay">
                 <h2 class="heading-medium center ">Tap to reveal photos of Barney and family <br /> enjoying life</h2>
             </div>
@@ -274,8 +274,8 @@
       <section>
 <!-- <div class="reveal-wrapper"> -->
  
-<div class="reveal-grid-container main-div-wrapper" id="js-and-css-reveal-grid-container">
-  <div class="close-icon"><img src="./images/x-close-icon.svg" alt="x close icon" id="js-close-reveal-button"></div>
+<div class="reveal-grid-container main-div-wrapper" id="jsRevealGridContainer">
+  <div class="close-icon"><img src="./images/x-close-icon.svg" alt="x close icon" id="jsCloseRevealBtn"></div>
   <div class="item1">
     <picture>
       <source media="(min-width: 1001px)" srcset="./images/reveal-collage/1-Ros_barney_and_travis_by_steps.jpg" />
@@ -350,7 +350,7 @@
   </div>
 </div>
 
-<div id="popup-reveal-overlay"></div>
+<div id="popupRevealOverlay"></div>
 
 
 
