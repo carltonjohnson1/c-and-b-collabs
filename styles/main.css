@@ -108,10 +108,15 @@
     }
   }
 
-  #paws-view {
+  #pawsView {
     display: inline;
     
     }
+
+    #darkBgPawsView {
+      display: inline;
+      
+      }
 
 
 .paws-svg-1st-left {
