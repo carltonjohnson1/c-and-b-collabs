@@ -6,7 +6,7 @@
 
 ## Content
 
-This was completed as my final project in a 10 week course I completed on becoming a Front-end Developer. The course was run by [General Assembly](https://generalassemb.ly/students/courses/front-end-web-development-short-course/london).
+This was completed as my final project in a 10 week course I completed on becoming a Front-end Developer. The course was run by [General Assembly](https://generalassemb.ly/).
 
 This project was focused on working on showcasing all the skills I'd learned during the 10 week course, so HTML, CSS and Javascript, without using any frameworks just pure code.
 
