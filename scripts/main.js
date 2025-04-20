@@ -10,7 +10,7 @@ The three E's
 */
 // Element
 let darkmode = localStorage.getItem("darkmmode");
-const themeSwitch = document.getElementById("js-and-css-theme-switch");
+const themeSwitch = document.getElementById("jsThemeSwitchBtn");
 
 const enableDarkmode = () => {
     document.body.classList.add("darkmode");
@@ -58,9 +58,9 @@ The three E's
 
 // Element
 
-const revealBarney = document.getElementById("js-black-btn");
-const closeVideo = document.getElementById("js-close-video-button");
-const popupVideo = document.getElementById("popup-video-overlay");
+const revealBarney = document.getElementById("jsBlackBtn");
+const closeVideo = document.getElementById("jsCloseVideoBtn");
+const popupVideo = document.getElementById("popupVideoOverlay");
 
 // Event
 revealBarney.addEventListener("click", revealVideo);
@@ -69,20 +69,20 @@ popupVideo.addEventListener("click", closeVideoOverlay);
 
 // Execution  
 function revealVideo (){
-document.getElementById("js-and-css-barney-video").style.display = "block";
-document.getElementById("popup-video-overlay").style.display = "block";
+document.getElementById("jsBarneyVideo").style.display = "block";
+document.getElementById("popupVideoOverlay").style.display = "block";
     
 }
 
 
 function closeVideoButton() {
-    document.getElementById("js-and-css-barney-video").style.display = "none";
-    document.getElementById("popup-video-overlay").style.display = "none";
+    document.getElementById("jsBarneyVideo").style.display = "none";
+    document.getElementById("popupVideoOverlay").style.display = "none";
 }
 
 function closeVideoOverlay() {
-    document.getElementById("js-and-css-barney-video").style.display = "none";
-    document.getElementById("popup-video-overlay").style.display = "none";
+    document.getElementById("jsBarneyVideo").style.display = "none";
+    document.getElementById("popupVideoOverlay").style.display = "none";
 }
 
 /*
@@ -96,9 +96,9 @@ The three E's
 */ 
 
 // Element
-const revealGallery = document.getElementById("js-reveal");
-const closeGallery = document.getElementById("js-close-reveal-button");
-const popupGallery = document.getElementById("popup-reveal-overlay");
+const revealGallery = document.getElementById("jsReveal");
+const closeGallery = document.getElementById("jsCloseRevealBtn");
+const popupGallery = document.getElementById("popupRevealOverlay");
 
 // Event
 revealGallery.addEventListener("click", revealPhotos);
@@ -108,19 +108,19 @@ popupGallery.addEventListener("click", closeOverlay);
 // Execution  
 function revealPhotos (){
 
-    document.getElementById("js-and-css-reveal-grid-container").style.display = "grid";
-    document.getElementById("popup-reveal-overlay").style.display = "block";
+    document.getElementById("jsRevealGridContainer").style.display = "grid";
+    document.getElementById("popupRevealOverlay").style.display = "block";
        
     }
 
 function closeButton() {
-    document.getElementById("js-and-css-reveal-grid-container").style.display = "none";
-    document.getElementById("popup-reveal-overlay").style.display = "none";
+    document.getElementById("jsRevealGridContainer").style.display = "none";
+    document.getElementById("popupRevealOverlay").style.display = "none";
 }
 
 function closeOverlay() {
-    document.getElementById("popup-reveal-overlay").style.display = "none";
-    document.getElementById("js-and-css-reveal-grid-container").style.display = "none";
+    document.getElementById("popupRevealOverlay").style.display = "none";
+    document.getElementById("jsRevealGridContainer").style.display = "none";
 }
 
 /*
@@ -157,35 +157,35 @@ animationWords.addEventListener("click", revealAnimationWords);
 
 function revealJsWords (){
  
-    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "JavaScript: used for creating interactivity";
+    document.getElementById("jsUsedForReveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "JavaScript: used for creating dynamism and interactivity";
     
     }
 
 function revealUiWords (){
-    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("jsUsedForReveal").style.display = "flex";
     document.getElementById("wordChanges").innerText = "UI/UX: used for creating a great user experience";
            
     }
 function revealHtmlWords (){
-    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "HTML: used for page structure";
+    document.getElementById("jsUsedForReveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "HTML: used for content and page structure";
        
     }
 
 function revealCssWords (){
-    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
-    document.getElementById("wordChanges").innerText = "CSS: used for design, layout and style";
+    document.getElementById("jsUsedForReveal").style.display = "flex";
+    document.getElementById("wordChanges").innerText = "CSS: used for the presentation, so design, layout and style";
            
     }
 function revealGrahicWords (){
-    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("jsUsedForReveal").style.display = "flex";
     document.getElementById("wordChanges").innerText = "Graphic Design: used for images and design";
        
     }
 
 function revealAnimationWords (){
-    document.getElementById("js-and-css-used-for-reveal").style.display = "flex";
+    document.getElementById("jsUsedForReveal").style.display = "flex";
     document.getElementById("wordChanges").innerText = "Animation: used for creating moving items";
            
     }
@@ -194,7 +194,7 @@ function revealAnimationWords (){
 // closing revealed text when the text is clicked. 
 
 // Element
-const closeWordsChange = document.getElementById("js-and-css-used-for-reveal");
+const closeWordsChange = document.getElementById("jsUsedForReveal");
 
 // Event
 
@@ -203,16 +203,6 @@ closeWordsChange.addEventListener("click", closeWords);
 // Execution
 
 function closeWords () {
-    document.getElementById("js-and-css-used-for-reveal").style.display = "none"
+    document.getElementById("jsUsedForReveal").style.display = "none"
 }
 
-
-/* not sure I'm going to use the option below*/
-// // INTERACTIVE  4
-// // set paws to only show up when part way down the page
-// // set paws to show up and hide as needed to make it look like paws walking down the page on scroll
-
-window.addEventListener('scroll', function() {
-    let scrollPosition = this.window.scrollY;
-    
-  });
