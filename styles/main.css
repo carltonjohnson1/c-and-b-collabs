@@ -852,24 +852,17 @@ padding-top: 5px;
     
   }
   
-  .blue-background-circle {
-
-    height: 300px;
-    width: 300px;
-    background-color: var(--light-blue);
-    border-radius: 50%;
-    overflow: hidden;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-
-    img {
-  margin-top: 30px;
-      height: 275px;
+  
+  .blue-background-circle img {
+      height: 300px;
+      width: 300px;
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0 cover 40%;
     }
 
     
-  }
+ 
   
   .orange-background-circle {
     height: 150px;
@@ -922,23 +915,16 @@ border-left: 1px solid var(--orange-bittersweet-div-border);
 
 }
 
-.my-bio-blue-background-circle {
+.my-bio-blue-background-circle img {
   height: 100px;
   width: 100px;
-  background-color: var(--light-blue);
-  border-radius: 50%;
-  overflow: hidden;
   animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-
-  img {
-    margin-top: 12px;
-    height: 90px;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
       }
 
   
-}
+
 
 .barney-bio-blue-background-circle {
   height: 100px;
@@ -1480,13 +1466,10 @@ anything for this media query below */
   }
 
 
-.blue-background-circle {
+.blue-background-circle img {
     height: 200px;
     width: 200px;
-    img {
-      height: 175px;
 
-    } 
   }
 
 
@@ -1613,15 +1596,6 @@ anything for this media query below */
     flex-direction: column;
     
     }
-
-.blue-background-circle {
-    height: 200px;
-    width: 200px;
-    img {
-      height: 175px;
-  
-      } 
-  }
 
   
 
